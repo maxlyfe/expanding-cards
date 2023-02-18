@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
+/* Un reinicio de CSS. Se asegura de que el relleno y el borde de un elemento estén incluidos en el
+ancho y alto total de ese elemento. */
 * {
     box-sizing: border-box;
 }
 
+/* Configuración de la familia de fuentes, visualización, elementos de alineación, contenido
+justificado, altura, desbordamiento y margen. */
 body {
     font-family: 'Muli', sans-serif;
     display: flex;
@@ -14,11 +18,16 @@ body {
     margin: 0;
 }
 
+/* Estableciendo el ancho del contenedor al 90% del ancho de la ventana gráfica. */
 .container {
     display: flex;
     width: 90vw;
 }
 
+/* Configurar la imagen de fondo para cubrir todo el panel, centrar la imagen y no repetir la imagen.
+También establece la altura del panel en 80vh, el radio del borde en 50 px, el color en blanco, el
+cursor en un puntero, la flexión en 0,5, el margen en 10 px, la posición en relativa y la transición
+en 700 ms. facilidad en. */
 .panel {
     background-size: cover;
     background-position: center;
@@ -33,6 +42,8 @@ body {
     -webkit-transition: all 700ms ease-in;
 }
 
+/* Establecer el tamaño de fuente, la posición, la parte inferior, la izquierda, el margen y la
+opacidad del elemento h3. */
 .panel h3 {
     font-size: 24px;
     position: absolute;
@@ -42,15 +53,19 @@ body {
     opacity: 0;
 }
 
+/* Haciendo el panel activo 5 veces más grande que los otros paneles. */
 .panel.active {
     flex: 5;
 }
 
+/* Haciendo el panel activo 5 veces más grande que los otros paneles. */
 .panel.active h3 {
     opacity: 1;
     transition:  opacity 0.3s ease-in 0.4s;
 }
 
+/* Haciendo el contenedor 100% del ancho de la ventana gráfica. También está haciendo desaparecer los
+paneles 4 y 5. */
 @media (max-width: 480px) {
     .container {
         width: 100vw;
