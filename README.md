@@ -1,6 +1,6 @@
 # expanding-cards
 
-Funções JavaScript utilizada no codigo, as mesmas foram detalhadas utilizando ChatGPT para melhor claressa dos comandos utilizados.
+Funções JavaScript utilizada no codigo, as mesmas foram detalhadas utilizando ChatGPT para melhor clareza dos comandos utilizados.
 
 querySelectorAll()
 O método ‘document.querySelectorAll()’ é uma função nativa do JavaScript que é usada para selecionar um ou mais elementos HTML em uma pagina da web. Ele retorna um objeto NodeList que contêm todos os elementos que correspondem ao seletor especificado.
